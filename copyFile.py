@@ -2,9 +2,8 @@ from pathlib import Path
 import shutil
 from tqdm import tqdm
 
-path = Path("C:\\Users\\DIS\\Desktop\\estimation\\test2")
-output = Path("C:\\Users\\DIS\\Desktop\\estimation\\test")
-#output = Path("/media/smartcoop/PortableSSD")
+path = Path("<input file path>")
+output = Path("<output file path>")
 image_list = list(path.glob("**/*.jpg"))
         
 with tqdm(total=len(image_list), desc="filecopyfile") as p:
